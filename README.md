@@ -21,3 +21,9 @@ winequality.csv
 git add .
 
 git commit -m "first commit"
+
+git add . && git commit -m "update Readme.md"
+
+git remote add origin https://github.com/Aj-AB/Mlops_winequality.git
+git branch -M main
+git push origin main
