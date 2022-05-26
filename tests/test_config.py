@@ -7,6 +7,6 @@ class NotInRange(Exception):
 
 def test_generic():
     a=5
-    with pytest.rasises(NotInRange):
+    with pytest.raises(NotInRange):
         if a not in range(10,20):
             raise NotInRange()
