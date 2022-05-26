@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 20,
+    "workbench.preferredDarkColorTheme": "Abyss",
+    "debug.console.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+    "editor.suggestFontSize": 10,
+    "scm.inputFontSize": 20,
+    "notebook.markup.fontSize": 20,
+    "notebook.outputFontSize": 20,
+    "markdown.preview.fontSize": 20,
+    "screencastMode.fontSize": 72
+}
