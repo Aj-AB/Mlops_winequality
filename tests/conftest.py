@@ -1,7 +1,7 @@
+import yaml
 import pytest
 import os
 import json
-import yaml
 
 
 @pytest.fixture
