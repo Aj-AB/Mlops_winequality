@@ -3,6 +3,8 @@ import os
 import json
 import joblib
 import numpy as np
+
+
 params_path = "params.yaml"
 schema_path = os.path.join("prediction_service", "schema_in.json")
 
@@ -15,6 +17,8 @@ class NotInCols(Exception):
     def __init__(self, message="Not in cols"):
         self.message = message
         super().__init__(self.message)
+
+
 
 def read_params(config_path=params_path):
     with open(config_path) as yaml_file:
@@ -49,6 +53,7 @@ def validate_input(dict_request):
 
     def _validate_values(col, val):
         schema = get_schema()
+
         if not (schema[col]["min"] <= float(dict_request[col]) <= schema[col]["max"]) :
             raise NotInRange
 
