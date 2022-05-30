@@ -1,7 +1,7 @@
-# load the train and test
-# train alogorithm
-# save the metrices ,params
 
+# load the train and test
+# train algo
+# save the metrices, params
 import os
 import warnings
 import sys
@@ -55,7 +55,7 @@ def train_and_evaluate(config_path):
     with mlflow.start_run(run_name=mlflow_config["run_name"]) as mlops_run:
         lr = ElasticNet(
             alpha=alpha, 
-        l1_ratio=l1_ratio, 
+            l1_ratio=l1_ratio, 
             random_state=random_state)
         lr.fit(train_x, train_y)
 
