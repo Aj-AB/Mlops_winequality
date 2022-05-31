@@ -1,25 +1,27 @@
 import os
 
-dirs=[
-    os.path.join('data','raw'),
-    os.path.join('data','processed'),
-    os.path.join('notebooks'),
-    os.path.join('save_models'),
-    os.path.join('src')
+
+dirs = [
+    os.path.join("data", "raw"),
+    os.path.join("data", "processed"),
+    "notebooks",
+    "saved_models",
+    "src"
 ]
 
 for dir_ in dirs:
-    os.makedirs(dir_,exist_ok=True)
-    with open(os.path.join(dir_,".gitkeep"),"w") as f:
+    os.makedirs(dir_, exist_ok=True)
+    with open(os.path.join(dir_, ".gitkeep"), "w") as f:
         pass
 
-files=[
+
+files = [
     "dvc.yaml",
     "params.yaml",
-    ".gitignor",
-    os.path.join("src","__init__.py")
-
+    ".gitignore",
+    os.path.join("src", "__init__.py")
 ]
-for file_  in files:
-    with open(file_,"w") as f:
+
+for file_ in files:
+    with open(file_, "w") as f:
         pass
